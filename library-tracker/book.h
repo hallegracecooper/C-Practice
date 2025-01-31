@@ -16,11 +16,6 @@ public:
 
     // Display book details
     void display() const;
-
-    // Getters
-    std::string getTitle() const { return title; }
-    std::string getAuthor() const { return author; }
-    int getYear() const { return year; }
 };
 
 #endif
