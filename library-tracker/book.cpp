@@ -1,21 +1,15 @@
 #include "Book.h"
 
-// Constructor to initialize book details
-Book::Book(const string& t, const string& a, const string& i) {
-    title = t;
-    author = a;
-    isbn = i;
-}
+// Default constructor (sets default values)
+Book::Book() : title("Unknown"), author("Unknown"), year(0) {}
 
-// Getter method definitions (optional)
-string Book::getTitle() const {
-    return title;
-}
+// Constructor with parameters
+Book::Book(std::string title, std::string author, int year)
+    : title(title), author(author), year(year) {}
 
-string Book::getAuthor() const {
-    return author;
-}
-
-string Book::getIsbn() const {
-    return isbn;
+// Display book details
+void Book::display() const {
+    std::cout << "Title: " << title << "\n"
+              << "Author: " << author << "\n"
+              << "Year: " << year << "\n";
 }
