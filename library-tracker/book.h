@@ -11,14 +11,16 @@ private:
     int year;
 
 public:
-    // Default constructor (needed for creating objects without arguments)
-    Book();
-
-    // Constructor with parameters
+    // Constructor
     Book(std::string title, std::string author, int year);
 
     // Display book details
     void display() const;
+
+    // Getters
+    std::string getTitle() const { return title; }
+    std::string getAuthor() const { return author; }
+    int getYear() const { return year; }
 };
 
 #endif
