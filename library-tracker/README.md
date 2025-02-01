@@ -1,55 +1,36 @@
-# C-Practice
-CSE 310 Module 2
+# Overview
 
+As a software engineer, I have been focusing on furthering my learning in C++ by building a project that demonstrates various concepts such as classes, file handling, and data structures. This project is a library tracker program where users can add, display, and save books to a file. The goal was to deepen my understanding of C++ syntax, file I/O, and object-oriented programming principles. 
 
-# Library Book Tracker  
+This program allows users to store and manage books using a map structure, and it enables users to save and load the list of books from a text file. Through this project, I gained hands-on experience with the C++ language and learned about handling input/output, managing dynamic data, and structuring code for real-world applications.
 
-## Description  
-A simple C++ program to manage a library of books by allowing users to add, search, display, and save book information.  
+[Software Demo Video](http://youtube.link.goes.here)
 
-## Features  
-- Add books with title, author, and ISBN.  
-- Save and load books from a file.  
-- Search for books by title or author.  
+# Development Environment
 
-## How to Run  
-Instructions on compiling and running the program will be added here.  
+For this project, I used the following tools and technologies:
 
-# Library Tracker
+- **IDE**: Visual Studio Code (VS Code)
+- **Compiler**: g++ (GNU Compiler Collection)
+- **Programming Language**: C++
+- **Libraries**: The program makes use of standard C++ libraries like `<iostream>`, `<fstream>`, `<map>`, and `<string>` for handling basic I/O and file operations.
 
-This is a simple library tracker program in C++ that allows users to add, display, and save books to a file. It uses `std::map` to store books, where each book is identified by its title. Books are loaded from a file and can be saved back to the file after modifications.
+The project utilizes object-oriented principles with classes to represent books and handle operations like saving and loading from files.
 
-## Features
-- Add a new book to the library
-- Display all books in the library
-- Save the current list of books to a file
-- Books are saved and loaded from a text file (`books.txt`)
+# Useful Websites
 
-## How to Use
+During the development of this project, I found the following websites helpful:
 
-1. Compile the program using a C++ compiler.
-    ```bash
-    g++ main.cpp Book.cpp -o library
-    ```
+- [C++ Documentation](https://en.cppreference.com/w/)
+- [Stack Overflow](https://stackoverflow.com/)
+- [Learn C++](https://www.learncpp.com/)
+- [cpp.sh](https://cpp.sh/)
 
-2. Run the compiled program:
-    ```bash
-    ./library  # For Linux/macOS
-    library.exe  # For Windows
-    ```
+# Future Work
 
-3. Follow the on-screen menu to:
-    - Add a new book
-    - Save books to file
-    - Display all books
+There are several improvements and features that I would like to work on in the future:
 
-4. Exit the program when done.
-
-## File Structure
-- `main.cpp`: The main program logic.
-- `Book.h`: Header file for the `Book` class.
-- `Book.cpp`: Implementation file for the `Book` class.
-- `books.txt`: File where books are stored.
-
-## License
-This project is open-source and available under the [MIT License](LICENSE).
+- Implement a better user interface for interaction (possibly adding a graphical user interface).
+- Add functionality for deleting and editing books from the library.
+- Enhance the program's file handling to support different formats (e.g., CSV, JSON).
+- Implement better error handling and input validation.
